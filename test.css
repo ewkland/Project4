@@ -1,0 +1,17 @@
+.object{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: orange;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: scale(3,3);
+
+}
+@keyframes animation{
+    from{background-color: orange; transform: scale(1,1);}
+    50%{background-color: brown;}
+    to {background-color: red; transform: scale(3, 3); margin: 150px 150px;}
+}
