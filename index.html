@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <title>Project 4
     </title>
 </head>
 <body>
+    <nav>
+        <div class="fixed-menu">
+            <h1 class="logo">MR</h1>
+            <div class="nav-links">
+                <a class="nav-link main-link active" href="#main">Главная</a>
+                <a class="nav-link about-link" href="#about">Обо мне</a>
+                <a class="nav-link skills-link" href="#skills">Навыки</a>
+                <a class="nav-link works-link" href="#works">Работы</a>
+                <a class="nav-link comments-link" href="#comments">Отзывы</a>
+            </div>
+        </div>
+    </nav>
     <section id="main">
         <div class="main-block">
             <div class="planet"></div>
@@ -62,7 +73,7 @@
                         <img src="./img/js.png" width="70">
                     </div>
                 <div class="button">
-                    <a href="#">Смотреть работы</a>
+                    <a href="#works">Смотреть работы</a>
                 </div>
             </div>
         </div>
@@ -104,9 +115,23 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="right-footer">
+            <p>Михаил Райляну</p>
+            <p>Личный сайт веб разработчика</p>
+        </div>
+        <div class="middle-footer">
+            <p>(c) 2024</p>
+        </div>
+        <div class="left-footer">
+            <img class="icon" src="./img/discord.svg" width="29px">
+            <img class="icon" src="./img/facebook.svg" width="29px">
+            <img class="icon" src="./img/instagram.svg" width="29px">
+            <img class="icon" src="./img/telegram.svg" width="29px">
+        </div>
+    </footer>
 
     
-    <script src="./code.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -117,5 +142,6 @@
         });
       </script>
 
+    <script src="./code.js"></script>
 </body>
 </html>
