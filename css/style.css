@@ -6,10 +6,6 @@
     scroll-behavior: smooth;
 }
 
-.active{
-    background-color: #BBFF2C;
-}
-
 nav{
     position: fixed;
     width: 100%;
@@ -48,9 +44,9 @@ nav{
     transition: transform 0.3s ease;
 }
 
-.nav-link:hover{
-    transform: scale(1.1);
+.active, .nav-link:hover{
     background-color: #BBFF2C;
+    transform: rotate3d(1, 1, 0, 25deg);
 }
 
 .logo{
