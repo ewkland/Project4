@@ -349,14 +349,24 @@ section{
     padding-bottom: 10px;
 }
 
-.middle_footer{
-    display: flex;
-    justify-content: center;
-
+.middle_footer p{
+    letter-spacing: 1.5px;
 }
 
-.left_footer{
-    display: flex;
+.left_footer a{
+    margin-right: 15px;
+}
+
+.mobile-button{
+    display: none;
+    right: 20px;
+    position: absolute;
+    padding-top: 10px;
+    width: 40px;
+}
+
+.hide{
+    display: none;
 }
 
 
@@ -384,3 +394,166 @@ section{
     object-fit: cover;
   }
   
+
+@media (max-width: 1000px) {
+    .off-scroll{
+        overflow: hidden;
+    }
+    .mobile-button{
+        display: block;
+    }
+    .mobile-menu{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: #200153;
+        min-height: 100vh;
+    }
+    .mobile-nav{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-nav-links .nav-link{
+        margin-bottom: 30px;
+        width: 210px;
+        height: 50px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .logo{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .main-content{
+        max-width: 320px;
+    }
+    .main-title{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .main-subtitle{
+        font-size: 15px;
+    }
+    .moving-cloud, .moving-planet2, .moving {
+        display: none;
+    }
+    .about-block{
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0;
+    }
+    .about-card{
+        order: -1;
+        background-size: contain;
+        width: 326px;
+        height: 296px;
+    }
+    .about-card img{
+        width: 55%;
+    }
+
+    .about-card p{
+        color: #792aaf;
+    }
+
+    .about-content{
+        width: 75%;
+        height: 250px;
+        margin-bottom: 20px
+    }
+    .about-title{
+        font-size: 18px;
+    }
+
+    .skills-card{
+        margin: 20px;
+        padding-left: 10px;
+        background-size: contain;
+    }
+    
+    .skills-card p{
+        font-size: 16px;
+        margin-top: 15%;
+        margin-bottom: 20px;
+    }
+    
+    .skills-section{
+        min-height: 60vh;
+    }
+    
+    .skills-card .button{
+        position: absolute;
+        bottom: 170px;
+    }
+    
+    .skills-card{
+        margin-top: 0;
+    }
+
+    .works-block{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    .works-block img{
+        margin: 20px 0;
+        width: 80%;
+    }
+    
+    .comments-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+        
+    .comment{
+        background-image: url("../img/comment-mobile.png");
+    }
+    
+    .comment p{
+        font-size: 15px;
+        max-width: 290px;
+    }
+    
+    footer{
+        height: 200px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .footer-info{
+        text-align: center;
+    }
+
+    .button{
+        width: 150px;
+        height: 40px;
+        z-index: 2;
+    }    
+
+    .button a{
+        font-size: 15px;
+    }
+
+    .planet{
+        display: none;
+    }
+
+    .swiper{
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+      }
+}
