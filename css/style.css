@@ -395,7 +395,11 @@ section{
   }
   
 
+
 @media (max-width: 1000px) {
+    .btn-hide{
+        display: none;
+    }
     .off-scroll{
         overflow: hidden;
     }
